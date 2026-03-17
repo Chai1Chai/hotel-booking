@@ -1,16 +1,51 @@
-# React + Vite
+# QuickStay — Hotel Booking Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**QuickStay** is a modern hotel booking web application built with **React + Vite**, featuring multilingual support (English, Russian, Spanish) and a fully responsive design. The platform is designed for users who want to search and book hotel rooms, as well as for hotel owners who want to manage their properties.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Home Page**
+  - Hero section with search for city, check-in/check-out dates, and number of guests
+  - **Featured Destinations** section showcasing selected hotels
+  - **Exclusive Offers** section with limited-time promotions
+  - Customer testimonials with ratings
+  - Newsletter subscription
 
-## React Compiler
+- **Search & Filters**
+  - Search hotels by city
+  - Filters by room type, price, and popular amenities
+  - Sorting options (price, newest listings)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hotel & Room Details**
+  - Image gallery
+  - Room information: price, amenities, rating
+  - Check availability and book now button
+  - Host information and hotel details
 
-## Expanding the ESLint configuration
+- **Multilingual Support**
+  - Fully supports English, Russian, and Spanish
+  - Language switcher in the Navbar
+  - Translations organized into `common`, `navbar`, and `footer` namespaces using `react-i18next`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **User Functionality**
+  - Login & registration via **Clerk**
+  - View and manage bookings
+  - Support for multiple payment methods (Stripe, Pay at Hotel)
+  - Hotel owners can register their property and manage bookings
+
+- **UI Components**
+  - Responsive **Navbar** with mobile menu
+  - **Footer** with contact info, links, and newsletter subscription
+  - Hotel and offer cards
+  - Star rating component, amenity icons, and action buttons
+
+## Technologies
+
+- **React** with functional components and hooks
+- **Vite** — fast build tool and dev server
+- **Tailwind CSS** — modern, responsive styling
+- **react-i18next** — multilingual support
+- **react-router-dom** — routing
+- **Clerk** — user authentication
+- **Dummy Data** for hotels, rooms, and bookings (can be replaced with real backend)
+
